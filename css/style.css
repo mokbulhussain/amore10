@@ -74,6 +74,11 @@
 }
 
 @font-face {
+    font-family: GilroyExtraBold;
+    src: url(../fonts/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
     font-family: GeorgiaBold;
     src: url(../fonts/georgia-bold.ttf);
   }
@@ -261,9 +266,9 @@ label {
 
 .section-title h2 {
     font-size: 44px;
-    font-family: 'GeorgiaBold';
     color: #3B406C;
     line-height: 54px;
+    font-family: 'GilroyBold';
 }
 
 .section-title p {
@@ -271,7 +276,7 @@ label {
     color: #3B406C;
     font-family: 'GilroyRegular';
     line-height: 26px;
-    margin-top: 6px;
+    margin-top: 24px;
 }
 
 
@@ -292,8 +297,8 @@ header {
 }
 
 .navbar-brand img {
-    width: 131px;
-    height: 19px;
+    width: 162px;
+    height: 30px;
 }
 
 .nav-menu li {
@@ -303,18 +308,18 @@ header {
 .nav-menu li a {
     color: #3B406C !important;
     font-size: 16px;
-  
     line-height: 26px;
-    font-family: RalewayRegular;
+    font-family: GilroyRegular;
+    
 }
 
 .nav-menu li a:hover {
     font-weight: bold;
-    background: linear-gradient(180deg, #FFAD32 0%, #FF6F44 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+    background: linear-gradient(180deg, #5EC3FC 0%, #0066FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 
@@ -340,8 +345,8 @@ border-radius: 22px;
 }
 
 .nav-menu-right li.login a:hover {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+
+    border-bottom: 1px solid #3B406C;
     padding-bottom: 4px;
     padding-top: 5px;
 }
@@ -358,12 +363,26 @@ border-radius: 22px;
 /* 4. Header Banner */
 
 .banner{
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .banner-content{
     margin-top: 40px;
     text-align: center;
+    position: relative;
+    padding: 0px 60px;
+}
+
+img.banner-love1 {
+    position: absolute;
+    left: -60px;
+    top: 40px;
+}
+
+img.banner-love2 {
+    position: absolute;
+    right: -30px;
+    top: -30px;
 }
 
 
@@ -371,7 +390,7 @@ border-radius: 22px;
 .banner-content h1 {
     font-size: 50px;
     color: #3B406C;
-    font-family: RalewayBold;
+    font-family: GilroyExtraBold;
     line-height: 64px;
     margin-top: 24px;
 }
@@ -379,8 +398,8 @@ border-radius: 22px;
 .banner-content p {
     color: #3B406C;
     font-size: 16px;
-    font-family: 'RalewayRegular';
-    margin-bottom: 60px;
+    font-family: GilroyRegular;
+    margin-bottom: 40px;
     margin-top: 24px;
     line-height: 26px;
 }
@@ -401,6 +420,7 @@ border-radius: 22px;
     border: none;
 }
 
+
 .banner-form form button{
     background: linear-gradient(180deg, #F769D6 0%, #BE349E 100%);
 border-radius: 30px;
@@ -409,8 +429,23 @@ padding: 10px 18px;
 }
 
 
+.banner-form form button:hover{
+    box-shadow: 0px 20px 40px 0 rgb(72 10 45 / 12%);
+}
+
+
 .banner-bottom img {
+
     margin-top: 70px;
+    width: 100%;
+
+}
+
+
+.form-select:focus {
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: 0px 0px 0px transparent !important;
 }
 
 
@@ -427,23 +462,39 @@ section.popular-member {
     background: linear-gradient(97.06deg, #2E407E -11.18%, #43147A 105.62%);
 }
 
+
+.popular-member-heading {
+    text-align: center;
+    position: relative;
+}
+
+img.popular_love1 {
+    position: absolute;
+    right: -150px;
+    top: 28px;
+}
+
+img.popular_love2 {
+    position: absolute;
+    left: -60px;
+    top: -30px;
+}
+
 .popular-member-heading h2 {
-    margin-top: 160px;
+    margin-top: 155px;
     font-size: 44px;
     line-height: 54px;
     color: #ffffff;
     font-family: 'GilroyBold';
 }
 
-.popular-member-heading {
-    text-align: center;
-}
 
 .popular-member-heading p {
     font-size: 16px;
     color: #ffffff;
     font-family: 'GilroyRegular';
     line-height: 26px;
+    margin-top: 16px;
 }
 
 .popular-list {
@@ -461,7 +512,7 @@ section.popular-member {
 }
 
 .row.popular-member-row {
-    margin-top: 110px;
+    margin-top: 70px;
 }
 .popular-list-content h4 {
     font-size: 16px;
@@ -494,8 +545,8 @@ section.relationship {
 }
 
 .relationship-container {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 34px;
+    padding-right: 34px;
 }
 
 
@@ -515,16 +566,16 @@ section.relationship {
 
 .relationship-content h2 {
     color: #3B406C;
-    font-size: 40px;
-    font-family: 'RalewayBold';
-    line-height: 50px;
+    font-size: 44px;
+    font-family: GilroyBold;
+    line-height: 54px;
     margin-top: 20px;
 }
 
 .relationship-content p {
     color: #3B406C;
     font-size: 16px;
-    font-family: 'RalewayRegular';
+    font-family: 'GilroyRegular';
     line-height: 26px;
     margin-bottom: 44px;
     margin-top: 18px;
@@ -535,11 +586,10 @@ section.relationship {
     font-size: 16px;
     padding: 10px 24px;
     text-decoration: none;
-    font-family: 'RALEWAYSEMIBOLD';
+    font-family: 'GilroySemiBold';
     color: #ffffff;
-
-background: linear-gradient(227.39deg, #FB8DC7 7.37%, #F54EB4 113.39%);
-border-radius: 82px;
+    background: linear-gradient(227.39deg, #FB8DC7 7.37%, #F54EB4 113.39%);
+    border-radius: 82px;
 }
 
 .relationship-content a:hover {
@@ -550,7 +600,7 @@ border-radius: 82px;
 /* 6. Feature Start*/
 
 .feature {
-    margin-top: 120px;
+    margin-top: 140px;
 }
 .feature-title {
     text-align: center;
@@ -569,6 +619,7 @@ border-radius: 82px;
     line-height: 26px;
     font-family: 'GilroyRegular';
     margin-bottom: 50px;
+    margin-top: 16px;
 }
 
 .feature-item {
@@ -591,6 +642,7 @@ border-radius: 82px;
     color: #3B406C;
     line-height: 30px;
     font-family: 'GilroyRegular';
+    margin-top: 24px;
 }
 
 
@@ -598,20 +650,21 @@ border-radius: 82px;
 /* 5. Feature css */
 
 section.choose {
-    background: #ffffff;
-   margin-top: 200px;
+    background: #F6F9FF;
+   margin-top: 150px;
+   padding: 80px 0px;
 }
 
 .choose-container {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 34px;
+    padding-right: 34px;
 }
 
 
-
-.choose-colum {
-    padding-right: 100px;
+.choose-img img {
+    padding-left: 100px;
 }
+
 
 .choose-img img {
     width: 100%;
@@ -624,18 +677,18 @@ section.choose {
 
 .choose-content h2 {
     color: #3B406C;
-    font-size: 40px;
-    font-family: 'RalewayBold';
-    line-height: 50px;
+    font-size: 44px;
+    font-family: 'GilroyBold';
+    line-height: 54px;
     margin-top: 20px;
 }
 
 .choose-content p {
     color: #3B406C;
     font-size: 16px;
-    font-family: 'RalewayRegular';
+    font-family: 'GilroyRegular';
     line-height: 26px;
-    margin-bottom: 44px;
+    margin-bottom: 30px;
     margin-top: 18px;
 }
 
@@ -646,9 +699,8 @@ section.choose {
     text-decoration: none;
     font-family: 'RALEWAYSEMIBOLD';
     color: #ffffff;
-
-background: linear-gradient(227.39deg, #FB8DC7 7.37%, #F54EB4 113.39%);
-border-radius: 82px;
+    background: linear-gradient(227.39deg, #FB8DC7 7.37%, #F54EB4 113.39%);
+    border-radius: 82px;
 }
 
 .choose-content a:hover {
@@ -682,7 +734,7 @@ section.price {
 
 
 .container.price-area {
-    margin-top: 46px;
+    margin-top: 60px;
 }
 
 
@@ -704,11 +756,11 @@ section.price {
 
 
 .price-list-plan h3 {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 26px;
     text-transform: uppercase;
     color: #3B406C;
-    font-family: 'RalewaySemibold';
+    font-family: 'GilroyRegular';
 }
 
 .price-list-plan h4 {
@@ -743,7 +795,7 @@ section.price {
 
 .price-list p a {
     font-size: 16px;
-    font-family: 'RalewaySemibold';
+    font-family: 'GilroySemiBold';
     line-height: 26px;
     text-decoration: none;
     margin-top: 10px;
@@ -766,6 +818,10 @@ border-radius: 62px;
     background-color: #ffffff;
 }
 
+.price-list-active p a{
+    background: linear-gradient(227.39deg, #FB8DC7 7.37%, #F54EB4 113.39%);
+}
+
 
 .price-list:hover p a{
     background: linear-gradient(227.39deg, #FB8DC7 7.37%, #F54EB4 113.39%);
@@ -786,7 +842,7 @@ border-radius: 62px;
 
 /* Newsletter css */
 section.newsletter {
-    margin-top: 100px;
+    margin-top: 168px;
     background-image: url('../img/footer/newsletter.jpg');
     background-size: cover;
     height: 396px;
@@ -794,8 +850,7 @@ section.newsletter {
 }
 .newsletter-content {
     text-align: center;
-    width: 514px;
-    margin: 0px auto;
+
 }
 
 .newsletter-content h3 {
@@ -809,6 +864,7 @@ section.newsletter {
     background: #ffffff;
     padding: 6px 12px;
     border-radius: 30px;
+    margin: 0px auto;
     margin-top: 36px;
 }
 
@@ -829,8 +885,8 @@ section.newsletter {
     border-radius: 22px;
     color: #ffffff;
 
-    background: linear-gradient(180deg, #FFAD32 0%, #FF6F44 100%);
-border-radius: 82px;
+    background: linear-gradient(227.39deg, #FB8DC7 7.37%, #F54EB4 113.39%);
+    border-radius: 22px;
 }
 .subscribe-form form button:hover {
     box-shadow: 0px 20px 40px 0 rgb(72 10 45 / 10%);
@@ -858,17 +914,18 @@ footer {
     background-color: #3B406C;
     padding: 45px 0px 50px 0px;
     position: relative;
+    margin-top: -1px;
 }
 
 
 
 .ready{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 22px;
 }
 .ready h3 {
     color: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 46px;
     font-size: 44px;
     font-family: 'carmenBold';
     line-height: 54px;
@@ -881,9 +938,14 @@ footer {
     color: #ffffff;
     font-family: 'GilroySemiBold';
     line-height: 26px;
-    background: linear-gradient(180deg, #F769D6 0%, #BE349E 100%);
-border-radius: 30px;
+    background: linear-gradient(180deg, #5EC3FC 0%, #0066FF 100%);
+    border-radius: 30px;
 padding: 17px 44px;
+}
+
+.ready-start:hover{
+    background: linear-gradient(180deg, #5EC3FC 30%, #0066FF 100%);
+    color: #ffffff;
 }
 
 .ready-contact {
@@ -892,10 +954,15 @@ padding: 17px 44px;
     color: #ffffff;
     font-family: 'GilroySemiBold';
     line-height: 26px;
-    background: #F3B050;
-border-radius: 30px;
+    background: linear-gradient(180deg, #F769D6 0%, #BE349E 100%);
+    border-radius: 30px;
 padding: 17px 44px;
 margin-left: 24px;
+}
+
+.ready-contact:hover{
+    background: linear-gradient(180deg, #F769D6 20%, #BE349E 100%);
+    color: #ffffff;
 }
 
 
@@ -939,15 +1006,51 @@ margin-left: 24px;
 }
 
 .footer-mid {
-    margin-top: 60px;
+    margin-top: 110px;
+}
+
+.footer-part1 img {
+    width: 162px;
+    height: 30px;
+}
+
+.footer-part1 p {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'PoppinsRegular';
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+.footer-part1 ul {
+    margin-top: 30px;
+}
+
+.footer-part1 ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-part1 ul li a {
+    padding: 10px 14px;
+    border-radius: 52px;
+}
+
+.footer-part1 ul li a i {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer-part1 ul li a:hover i {
+    color: #d448b4;
 }
 
 
 
 .footer-part h3 {
     color: #ffffff;
-    font-size: 14px;
-    font-family: 'PoppinsSemiBold';
+    font-size: 16px;
+    font-family: 'GilroySemiBold';
     line-height: 24px;
 }
 
